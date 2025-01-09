@@ -49,6 +49,5 @@ dependencies = [
     "sphinx"
 ]
 
-
 [tool.uv.pip]
 system = true
