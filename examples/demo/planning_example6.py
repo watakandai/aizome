@@ -51,7 +51,8 @@ Consider the following environment:
 """
 
 from collections import defaultdict
-from examples.demo.planning_utils import get_location_assignments
+
+from specless.utils.planning_utils import get_location_assignments
 
 
 def main():

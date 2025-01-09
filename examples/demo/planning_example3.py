@@ -50,8 +50,8 @@ Consider the following environment:
 ########################################################
 """
 
-from examples.demo.planning_utils import get_location_assignments
 import specless as sl
+from specless.utils.planning_utils import get_location_assignments
 
 
 def main():

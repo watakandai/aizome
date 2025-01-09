@@ -3,7 +3,7 @@ name = "specless"
 version = "0.0.2"
 description = "Package to learn specification and synthesize strategy from demonstrations"
 authors = [
-  { name = "Kandai Watanabe", email = "kandai.wata@gmail.com" },
+  {name = "Kandai Watanabe", email = "kandai.wata@gmail.com" },
   {name = "Georgios Fainekos", email = "fainekos@gmail.com"},
   {name = "Bardh Hoxha", email = "bardhh@gmail.com"},
   {name = "Morteza Lahijanian", email = "morteza.lahijanian@colorado.edu"},

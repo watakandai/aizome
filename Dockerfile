@@ -22,9 +22,6 @@ WORKDIR /home/specless
 # Copy necessary project files
 COPY pyproject.toml /home/specless/
 
-# Set the PYTHONPATH for the project
-ENV PYTHONPATH="/home:/home/specless:/home/cbfkit/src"
-
 # Install Python dependencies
 RUN uv pip install .
 

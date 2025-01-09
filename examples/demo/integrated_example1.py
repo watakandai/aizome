@@ -1,5 +1,5 @@
 import specless as sl  # or load from specless.inference import TPOInference
-from examples.demo.planning_utils import get_location_assignments
+from specless.utils.planning_utils import get_location_assignments
 
 
 def main():
