@@ -46,7 +46,10 @@ dependencies = [
     "pytest-mock>=3.14.0,<4.0",
     "pytest-cov>=4.1.0,<5.0",
     "sphinx-rtd-theme",
-    "sphinx"
+    "sphinx",
+    "jupyterlab",
+    "ipykernel",
+    "notebook"
 ]
 
 [tool.uv.pip]

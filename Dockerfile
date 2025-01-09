@@ -22,8 +22,16 @@ WORKDIR /home/specless
 # Copy necessary project files
 COPY pyproject.toml /home/specless/
 
-# Install Python dependencies
+# Install Python dependencies from pyproject.toml
 RUN uv pip install .
 
+# Generate Jupyter configuration (if needed)
+RUN jupyter notebook --generate-config \
+    && mkdir -p /home/specless/.jupyter \
+    && echo "c.NotebookApp.ip = '0.0.0.0'\nc.NotebookApp.allow_root = True\nc.NotebookApp.open_browser = False" >> /home/specless/.jupyter/jupyter_notebook_config.py
+
+# Expose Jupyter's default port
+EXPOSE 8888
+
 # Default command
-CMD ["bash"]
+CMD ["jupyter", "notebook", "--notebook-dir=/home/specless", "--no-browser", "--allow-root"]
